@@ -41,6 +41,8 @@ main {
     padding: 20px;
 
     gap: 30px;
+
+    border-radius: 20px;
 }
 
 .left {
