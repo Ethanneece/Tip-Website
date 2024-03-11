@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <img src="images/logo.svg" alt="logo">
+  <main>
+    <div class="left">
+      <div class="billContainer">
+        <h1 class="billHeader">
+          Bill
+        </h1>
+        <input id="billInput" class="billInput" type="number" placeholder="0">
+      </div>
+
+      <div class="tipContainer">
+        <h1 class="tipHeader">
+          Select Tip %
+        </h1>
+        <div class="tipSwitch">  
+          <button id="tip1" value="0.05" class="tipButton unSelectedTip">
+            5%
+          </button>
+          <button id="tip2" value="0.10" class="tipButton unSelectedTip">
+            10%
+          </button>
+          <button id="tip3" value="0.15" class="tipButton unSelectedTip">
+            15%
+          </button>
+          <button id="tip4" value="0.25" class="tipButton unSelectedTip">
+            25%
+          </button>
+          <button id="tip5" value="0.50" class="tipButton unSelectedTip">
+            50%
+          </button>
+          <input id="custom" placeholder="Custom" class="inputCustom">
+        </div>
+      </div>
+
+      <div class="peopleContainer">
+        <div>
+          <div class="peopleFlex">
+            <h1 class="peopleHeader">
+              Number of People
+            </h1>
+            <p id="peopleErrorMessage" class="errorHidden error">Can't be zero</p>
+          </div>
+        </div>
+        <input id="peopleInput" class="peopleInput" type="number" placeholder="0">
+      </div>
+    </div>
+
+    <div class="resultContainer">
+      <div class="tipAmountContainer">
+        <div class="tipPersonContainer">
+          <div>
+            <h1 class="tipPersonHeader">
+              Tip Amount
+            </h1>
+            <h2 class="tipPersonTag">
+              / person
+            </h2>
+          </div>
+            <h3 id="tipAmount" class="tipPersonAmount">
+              $0.00
+            </h3>
+        </div>
+        <div class="totalPersonContainer">
+          <div>
+            <h1 class="totalPersonHeader">
+              Total
+            </h1>
+            <h2 class="totalPersonTag">
+              / person
+            </h2>
+          </div>
+          <h3 id="totalAmount" class="totalPersonAmount">
+            $0.00
+          </h3>
+        </div>
+      </div>
+      <button id="reset" disabled class="resetButton">
+        Reset
+      </button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
